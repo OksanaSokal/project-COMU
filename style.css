@@ -211,6 +211,8 @@ li a:hover {
 }
 
 .share__subtitle {
+  display: block;
+  font-size: 16.665px;
   max-width: 449px;
   color: #535359;
   line-height: 146.687%;
@@ -334,7 +336,7 @@ li a:hover {
   margin-bottom: 10px;
 }
 
-.second__items p {
+.second__items span {
   max-width: 290px;
   color: #535359;
   text-align: center;
@@ -420,6 +422,7 @@ li a:hover {
   margin-bottom: 18px;
 }
 .third__subtitle {
+  display: inline-block;
   max-width: 319px;
   color: #535359;
   font-size: 16.67px;
@@ -448,6 +451,7 @@ li a:hover {
 }
 
 .forth__subtitle {
+  display: block;
   max-width: 601px;
   color: #393939;
   text-align: center;
@@ -523,6 +527,7 @@ li a:hover {
   font-size: 16.67px;
   letter-spacing: 0.5px;
   margin-bottom: 20px;
+  display: inline-block;
 }
 
 .fifth__block {
@@ -551,6 +556,7 @@ li a:hover {
 }
 
 .fifth__block_title {
+  display: inline-block;
   color: #000;
   font-family: Roboto;
   font-size: 15.725px;
@@ -559,6 +565,7 @@ li a:hover {
 }
 
 .fifth__block_subtitle {
+  display: block;
   color: #000;
   font-family: Roboto;
   font-size: 14.736px;
@@ -871,6 +878,7 @@ li a:hover {
   border-radius: 8px;
   border: 2px solid #fe9868;
   color: #000;
+  background: transparent;
 }
 
 .seventh__title {
@@ -883,6 +891,7 @@ li a:hover {
 
 /* section seventh start */
 .seventh__subtitle {
+  display: block;
   margin: 0 auto 74px;
   text-align: center;
   max-width: 601px;
@@ -954,6 +963,7 @@ li a:hover {
 }
 
 .ninth__subtitle {
+  display: block;
   max-width: 601px;
   margin: 0 auto;
   text-align: center;
@@ -1026,6 +1036,7 @@ li a:hover {
 }
 
 .tenth__subtitle {
+  display: block;
   max-width: 625px;
   text-align: center;
   color: #393939;
@@ -1222,6 +1233,7 @@ li a:hover {
 }
 
 .thirteenth__subtitle {
+  display: block;
   max-width: 567px;
   text-align: center;
   margin-bottom: 44px;
@@ -1350,6 +1362,7 @@ li a:hover {
 }
 
 .fourteenth__subtitle {
+  display: inline-block;
   max-width: 463px;
   color: #393939;
   font-size: 16.67px;
@@ -1393,6 +1406,7 @@ li a:hover {
 }
 
 .fifteenth__text {
+  display: block;
   margin-top: 10px;
   line-height: 153.2%;
   letter-spacing: 0.5px;
@@ -1402,10 +1416,6 @@ li a:hover {
 
 .fifteenth__left {
   font-weight: 700;
-}
-.fifteenth__store {
-  margin-top: 20px;
-  margin-left: 40px;
 }
 
 .fifteenth__links {
@@ -1466,6 +1476,10 @@ li a:hover {
   margin-right: 15px;
 }
 
+.fifteenth__store {
+  margin-top: 15px;
+}
+
 /* section fifteenth end */
 
 /* section footer start */
@@ -1476,6 +1490,18 @@ li a:hover {
   background: linear-gradient(90deg, #f7e6cb 0%, #f5f2ea 99.44%);
   display: flex;
   justify-content: center;
+}
+
+.footer__left {
+  display: flex;
+}
+
+.footer__left span {
+  margin-right: 105px;
+}
+
+.footer__right {
+  display: flex;
 }
 
 .footer__container {
@@ -1490,15 +1516,21 @@ li a:hover {
   line-height: 153.2%;
 }
 
+.footer__container span {
+  display: block;
+}
+
 .footer__links {
   display: flex;
   justify-content: space-between;
   width: 230px;
+  margin-top: -5px;
 }
 
 .footer__link {
   width: 28px;
   height: 28px;
+  margin-right: 9px;
 }
 
 .footer__link a + img:hover {
@@ -1508,6 +1540,7 @@ li a:hover {
 .footer__email {
   padding-left: 28.5px;
   background: url('assets/svg/mail.svg') no-repeat;
+  margin-right: 15px;
 }
 
 .footer__number {
@@ -1609,7 +1642,12 @@ li a:hover {
   .twelfth__title {
     margin-top: 50px auto 0px;
   }
+  .forth__box {
+    flex-direction: column;
+    align-items: center;
+  }
 }
+
 @media (max-width: 968px) {
   .thirteenth__box {
     display: block;
@@ -1662,7 +1700,23 @@ li a:hover {
   .share {
     max-height: 490px;
   }
+  .footer__left {
+    display: block;
+  }
+  .footer__links {
+    margin-top: 10px;
+  }
+  .footer__right {
+    display: block;
+  }
+  .footer__email {
+    margin-bottom: 5px;
+  }
+  .footer__left span {
+    margin-right: 0px;
+  }
 }
+
 @media (max-width: 768px) {
   .share__img {
     display: none;
@@ -1728,6 +1782,10 @@ li a:hover {
   .ninth__box {
     margin: 40px 0px;
   }
+  .tenth__title {
+    text-align: center;
+    padding-top: 10px;
+  }
   .eleventh__title {
     margin-top: 40px;
   }
@@ -1739,6 +1797,14 @@ li a:hover {
   }
   .footer__container {
     flex-direction: column;
+    align-items: flex-start;
+    margin-left: 40px;
+  }
+  .footer {
+    height: 110px;
+  }
+  .footer__right {
+    display: flex;
   }
   .eleventh__box {
     flex-direction: column;
@@ -1750,14 +1816,8 @@ li a:hover {
   .phone__two {
     top: 60px;
   }
-  .forth__box {
-    display: block;
-  }
   .fifteenth__input {
     max-width: 300px;
-  }
-  .thirteenth__btn {
-    max-width: 170px;
   }
   .fourteenth__box {
     display: block;
@@ -1833,10 +1893,12 @@ li a:hover {
   .header__burger.active::before {
     transform: rotate(45deg);
     top: 9px;
+    background-color: #fe9563;
   }
   .header__burger.active::after {
     transform: rotate(-45deg);
     bottom: 9px;
+    background-color: #fe9563;
   }
   .header__burger.active span {
     transform: scale(0);
@@ -1847,15 +1909,17 @@ li a:hover {
     height: 100%;
     top: -100%;
     right: 0;
-    background-color: rgba(69, 90, 100, 0.7);
+    background-color: rgba(69, 90, 100, 0.9);
     padding-top: 60px;
     transition: all 0.3s ease 0s;
   }
   .header__navigation.active {
     top: 0;
   }
+  li > a {
+    color: #fe9563;
+  }
   .header__container {
-    /* justify-content: flex-end; */
     margin: 30px 50px 0px 0px;
   }
   .header__logo {
@@ -1868,6 +1932,7 @@ li a:hover {
   .fifteenth__text {
     text-align: left;
     margin-left: 40px;
+    margin-bottom: 10px;
   }
   .header__links {
     flex-direction: column;
@@ -1882,6 +1947,13 @@ li a:hover {
   .header__links > li {
     margin-right: 27px;
     margin-bottom: 10px;
+  }
+  .fifteenth__store {
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+  .footer {
+    padding: 7px 0px;
   }
 }
 
@@ -1899,17 +1971,9 @@ li a:hover {
   .second__item {
     flex-direction: column;
   }
-  .thirteenth__input {
-    padding: 3px;
-  }
-  .thirteenth__btn {
-    padding: 3px;
-  }
   .fifteenth__input {
     padding: 3px;
-  }
-  .thirteenth__btn {
-    padding: 3px;
+    width: 100%;
   }
   .fifteenth__links {
     flex-direction: column;
@@ -1923,23 +1987,23 @@ li a:hover {
     max-width: 250px;
   }
   .thirteenth__btn {
+    width: 100%;
     margin-top: 7px;
     border-radius: 8px;
-    margin: 0 auto;
+    margin-left: 0;
+    padding: 3px;
   }
   .thirteenth__title__input + form {
     display: block;
   }
   .thirteenth__input {
-    max-width: 300px;
+    width: 100%;
     border-radius: 8px;
     margin-bottom: 7px;
-  }
-
-  .footer {
-    height: 120px;
+    padding: 3px;
   }
   .footer__container {
+    margin-left: 20px;
     flex-wrap: nowrap;
     gap: 7px;
   }
@@ -1949,11 +2013,10 @@ li a:hover {
   .thirteenth__title__input + form {
     margin-bottom: 30px;
   }
-  .thirteenth__btn {
-    margin-left: 0;
-  }
+
   .ninth__box {
     margin: 20px 0px;
+    display: block;
   }
   .forth__store {
     margin-top: 0px;
@@ -1961,6 +2024,7 @@ li a:hover {
   .forth__img__box {
     width: 90px;
     height: 20px;
+    margin-left: -10px;
   }
   .sixth__background {
     height: 466px;
@@ -1979,5 +2043,16 @@ li a:hover {
   }
   .second__text {
     padding-top: 20px;
+  }
+  .fourteenth__offer__border {
+    border-right: none;
+    border-left: none;
+    padding-left: 7px;
+  }
+  .offer__border {
+    border: none;
+  }
+  .ninth__offer {
+    margin-left: 50px;
   }
 }
