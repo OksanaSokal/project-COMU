@@ -35,7 +35,7 @@ img {
   max-width: 1440px;
   margin: 0 auto;
   background: #fffcf5;
-  /* overflow: hidden; */
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -1405,6 +1405,7 @@ li a:hover {
 }
 .fifteenth__store {
   margin-top: 20px;
+  margin-left: 40px;
 }
 
 .fifteenth__links {
@@ -1557,6 +1558,7 @@ li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
   }
   .header__logo {
     justify-content: center;
@@ -1858,7 +1860,14 @@ li a:hover {
   }
   .header__logo {
     justify-content: flex-start;
+    margin-left: 30px;
+  }
+  .fifteenth__left + .header__logo {
     margin-left: 50px;
+  }
+  .fifteenth__text {
+    text-align: left;
+    margin-left: 40px;
   }
   .header__links {
     flex-direction: column;
