@@ -500,7 +500,7 @@ li a:hover {
 }
 
 .forth__text {
-  padding-top: 7.6%;
+  align-self: center;
 }
 
 /* section forth end */
@@ -1779,9 +1779,6 @@ li a:hover {
     margin-left: 50px;
     text-align: left;
   }
-  .ninth__box {
-    margin: 40px 0px;
-  }
   .tenth__title {
     text-align: center;
     padding-top: 10px;
@@ -1820,14 +1817,11 @@ li a:hover {
     max-width: 300px;
   }
   .fourteenth__box {
-    display: block;
-    margin: 0 auto;
+    align-items: center;
+    text-align: center;
   }
   .fourteenth__image {
     margin: 0 auto;
-  }
-  .fourteenth__text {
-    margin-left: 50px;
   }
   .twelfth__wrap {
     display: block;
@@ -1848,7 +1842,7 @@ li a:hover {
     margin-top: 20px;
   }
   .big__orange__block {
-    display: block;
+    flex-direction: column;
   }
   .fifth__title {
     margin-top: 20px;
@@ -1922,16 +1916,14 @@ li a:hover {
   .header__container {
     margin: 30px 50px 0px 0px;
   }
-  .header__logo {
+  /* .header__logo {
     justify-content: flex-start;
     margin-left: 30px;
-  }
+  } */
   .fifteenth__left + .header__logo {
     margin-left: 50px;
   }
   .fifteenth__text {
-    text-align: left;
-    margin-left: 40px;
     margin-bottom: 10px;
   }
   .header__links {
@@ -1951,6 +1943,12 @@ li a:hover {
   .fifteenth__store {
     margin-top: 20px;
     margin-left: 40px;
+  }
+  .fourteenth__store {
+    justify-content: center;
+  }
+  .ninth__box {
+    justify-content: center;
   }
   .footer {
     padding: 7px 0px;
@@ -2013,11 +2011,6 @@ li a:hover {
   .thirteenth__title__input + form {
     margin-bottom: 30px;
   }
-
-  .ninth__box {
-    margin: 20px 0px;
-    display: block;
-  }
   .forth__store {
     margin-top: 0px;
   }
@@ -2052,7 +2045,19 @@ li a:hover {
   .offer__border {
     border: none;
   }
-  .ninth__offer {
-    margin-left: 50px;
+  .fifteenth__right {
+    width: 100%;
+  }
+  .thirteenth__input {
+    max-width: 100%;
+  }
+  .fourteenth__text {
+    margin-left: 0px;
+  }
+  .header__logo {
+    justify-content: center;
+  }
+  .fifteenth__store {
+    justify-content: center;
   }
 }
